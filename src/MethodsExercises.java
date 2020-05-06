@@ -4,10 +4,10 @@ public class MethodsExercises {
     public static void main(String[] args){
         System.out.println(addition(5,3));
         System.out.println(subtraction(6, 2));
-//        System.out.println(multiplication(4, 3));
+        System.out.println(multiplication(4, 3));
 //        System.out.println(product(4,2));
         System.out.println(division(9, 3));
-//        System.out.println(getInteger(3,8));
+        getInteger(1, 10);
         System.out.println(factorial(1));
     }
 
@@ -22,9 +22,9 @@ public class MethodsExercises {
         return num3 - num4;
     }
     //multiplication
-//    public static int multiplication(int num5, int num6){
-//        return num5 * num6;
-//    }
+    public static int multiplication(int num5, int num6){
+        return num5 * num6;
+    }
     //MULTIPLICATION WITH RECURSION NOT *
 //    public static int product(int num5, int num6){
 //        if ((num5 == 0) || (num6 == 0))
@@ -37,12 +37,20 @@ public class MethodsExercises {
     }
 //    ============================================================
     //Exercise 2
-//    public static int getInteger(int min, int max){
-//        System.out.print("Enter a number between 1 and 10: ");
-//        Scanner scanner = new Scanner(System.in);
-//        int userInput = getInteger(1, 10);
-//        return userInput;
-//    }
+    public static int getInteger(int min, int max){
+        Scanner scan = new Scanner(System.in);
+        System.out.print("Enter a number between 1 and 10");
+        int userInput = Integer.parseInt(scan.nextLine());
+
+        if(userInput < min || userInput > max){
+            System.out.println("Invalid number: not within range. Try again.");
+            return getInteger(min, max);
+        }else {
+            System.out.println("Number is within range.");
+            return userInput;
+        }
+    }
+
 
 //    =============================================================
     //Exercise 3
@@ -63,5 +71,7 @@ public class MethodsExercises {
         }
         return factorial(1);
     }
+//    ==============================================================
+    // Exercise 4
 
 }
