@@ -11,5 +11,10 @@ public class MethodsExercises {
     //subtraction
     public static int subtraction(int num3, int num4){
         return num3 - num4;
-
+    }
+    //multiplication
+    public static int multiplication(int num5, int num6){
+        return num5 * num6;
+    }
+    //division
 }
