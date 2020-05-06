@@ -8,6 +8,7 @@ public class MethodsExercises {
 //        System.out.println(product(4,2));
         System.out.println(division(9, 3));
 //        System.out.println(getInteger(3,8));
+        System.out.println(factorial(1));
     }
 
 //    =============================================================
@@ -47,7 +48,20 @@ public class MethodsExercises {
     //Exercise 3
     public static int factorial(int num){
         System.out.println("Enter a number from 1 to 10: ");
-        System.out.println("");
+        Scanner scanner = new Scanner(System.in);
+        int userInput = scanner.nextInt();
+        int factor = 1;
+        System.out.println("Your factorial number is: " + userInput);
+        System.out.println("Do you want to continue? (y/n)");
+        String userContinues = scanner.next();
+        if(userContinues.equals("y") && userInput > 0){
+            System.out.println("User is continuing. " + userContinues);
+            for (int n = 1; n <= userInput; n++){
+                factor *= n;
+            }
+            return factor;
+        }
+        return factorial(1);
     }
 
 }
