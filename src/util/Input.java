@@ -30,5 +30,11 @@ public class Input {
         return aNum;
     }
 
+    public int getInt(){
+        System.out.println("Give me an integer: ");
+        return Integer.parseInt(scanner.nextLine());
+    }
+
+
 
 }
