@@ -46,5 +46,8 @@ public class Input {
         return aDecimal;
     }
 
-
+    public double getDouble(){
+        System.out.println("Give me a decimal: ");
+        return Double.parseDouble(scanner.nextLine());
+    }
 }
