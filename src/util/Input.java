@@ -35,6 +35,16 @@ public class Input {
         return Integer.parseInt(scanner.nextLine());
     }
 
+    public double getDouble(double min, double max){
+        System.out.println("Give me a decimal between " + min +" and " + max);
+        double aDecimal = Double.parseDouble(scanner.nextLine());
+
+        if(aDecimal < min || aDecimal > max){
+            System.out.println("Outside of the range, try again.");
+            return getDouble(min, max);
+        }
+        return aDecimal;
+    }
 
 
 }
