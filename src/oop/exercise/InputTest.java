@@ -1,4 +1,6 @@
-package util.java.util;
+package oop.exercise;
+
+import oop.exercise.Input;
 
 public class InputTest {
     public static void main(String[] args){
