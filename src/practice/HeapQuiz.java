@@ -18,8 +18,10 @@ public class HeapQuiz {
         hq[0] = hq[3];
         hq[3] = hq[2];
         hq[2] = hq[0];
-        System.out.println(hq[3]);
+        System.out.println(x);
         //need to figure out how to test this...
         //what reference variables are connected to what objects?
+
+        //why do i get 3 if i print x? is that the number of objects?
     }
 }
