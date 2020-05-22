@@ -22,5 +22,15 @@ public class PhraseOMatic {
         System.out.println("twoLength = " + twoLength);
         System.out.println("threeLength = " + threeLength);
 
+        //generate three random numbers to build a phrase with
+        int num1 = (int) (Math.random() * oneLength);
+        int num2 = (int) (Math.random() * twoLength);
+        int num3 = (int) (Math.random() * threeLength);
+
+        //now the structure for the phrase using the three random numbers that are generated
+        String phrase = wordListOne[num1] + " " + wordListTwo[num2] + " " + wordListThree[num3];
+
+        //print out the phrase
+        System.out.println("What we need is a " + phrase);
     }
 }
