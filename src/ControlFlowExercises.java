@@ -51,5 +51,44 @@ public class ControlFlowExercises {
             differentCounter *= differentCounter;
             //differentCounter= differentCounter * differentCounter;
         }while(differentCounter < 1000000L);
+
+//        for loop
+//        refactor the previous two exercises to use a for loop instead
+
+//        int forCounter = 100;
+//
+//        do {
+//            System.out.println(forCounter);
+//            forCounter -= 5;
+//        }while(forCounter >= -10);
+        for(int forCounter = 100; forCounter >= -10; forCounter -= 5){
+            System.out.println("forCounter= " + forCounter);
+        }
+
+//        long differentCounter = 2L;
+//
+//        do {
+//            System.out.println(differentCounter);
+//            differentCounter *= differentCounter;
+//            //differentCounter= differentCounter * differentCounter;
+//        }while(differentCounter < 1000000L);
+        for(long forLongCounter = 2L; forLongCounter < 1000000L; forLongCounter *= forLongCounter){
+            System.out.println("forLongCounter= " + forLongCounter);
+        }
+
+//        FizzBuzz
+//        Write a program that prints the numbers from 1 to 100. For multiples of three print "Fizz" instead of the number. For the multiples of five print "Buzz". For numbers which are multiples of both three and five print "FizzBuzz".
+
+        for(int n = 1; n <= 100; n++){
+            if(n % 15 == 0){
+                System.out.println("FizzBuzz");
+            }else if(n % 3 == 0){
+                System.out.println("Fizz");
+            }else if(n % 5 == 0){
+                System.out.println("Buzz");
+            }else{
+                System.out.println(n);
+            }
+        }
     }
 }
