@@ -135,5 +135,48 @@ public class ControlFlowExercises {
                 userContinues = false;
             }
         }while(userContinues);
+
+//        Convert given number grades into letter grades
+
+//        Prompt the user for a numerical grade from 0 to 100. Display the corresponding letter grade. Prompt the user to continue. Assume that the user will enter valid integers for the grades. The application should only continue if the user agrees to.
+//        Grade ranges:
+
+//        A: 100 - 88
+//        B : 87 - 80
+//        C: 79 - 67
+//        D : 66 -60
+//        F: 59 - 0
+//        Bonus
+
+//        Edit your grade ranges to include pluses and minuses (ex. 99-100 = A+)
+
+        //grade converter
+
+        Scanner scn = new Scanner(System.in);
+
+        boolean anotherGrade = true;
+
+        do{
+            System.out.print("Please enter a numerical grade from 0 to 100");
+            int numericGrade = scanner.nextInt();
+
+            if(numericGrade >= 88){
+                System.out.println("A");
+            }else if(numericGrade >= 80){
+                System.out.println("B");
+            }else if(numericGrade >= 67){
+                System.out.println("C");
+            }else if(numericGrade >= 60){
+                System.out.println("D");
+            }else{
+                System.out.println("F");
+            }
+
+            System.out.print("Do you want to enter a new grade? ");
+            String userResponse = scanner.next();
+            if(!userResponse.equalsIgnoreCase("y")){
+                anotherGrade = false;
+            }
+        }while(anotherGrade);
     }
 }
