@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class ControlFlowExercises {
     public static void main(String[] args) {
         System.out.println("Control Flow Exercises");
@@ -90,5 +92,48 @@ public class ControlFlowExercises {
                 System.out.println(n);
             }
         }
+
+//        Prompt the user to enter an integer. Display a table of squares and cubes from 1 to the value entered. Ask
+//        if the user wants to continue. Assume that the user will enter valid data. Only continue if the user agrees
+//        to.
+
+//        What number would you like to go up to? 5
+//
+//        Here is your table!
+//
+//        number | squared | cubed
+//        ------ | ------- | -----
+//        1      | 1       | 1
+//        2      | 4       | 8
+//        3      | 9       | 27
+//        4      | 16      | 64
+//        5      | 25      | 125
+        //Table of powers
+        Scanner scanner = new Scanner(System.in);
+
+        boolean userContinues = true;
+
+        do{
+            System.out.println("What number would you like to go up to?");
+            int userInt = scanner.nextInt();
+            System.out.println();
+            System.out.println("Here is your table!");
+            System.out.println();
+            System.out.println("number | squared | cubed");
+            System.out.println("------ | ------- | -----");
+            for(int input = 1; input <= userInt; input++){
+                System.out.format("%-6d", input);
+                System.out.print(" | ");
+                System.out.format("%-7d", input * input);
+                System.out.print(" | ");
+                System.out.print(input * input * input);
+                System.out.println();
+            }
+            System.out.print("Would you like to enter another number (y/n)?");
+            String userResponse = scanner.next();
+            if(!userResponse.equalsIgnoreCase("y")){
+                userContinues = false;
+            }
+        }while(userContinues);
     }
 }
