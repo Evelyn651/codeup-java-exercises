@@ -2,11 +2,11 @@ package practice;
 
 public class Store {
 
-    // declare instance fields here!
+    // declare instance fields here! //new fields- can have multiple
     String productType;
-    //new fields- can have multiple
     int inventoryCount;
     double inventoryPrice;
+    double price;
 
     // constructor method
     public Store(String product, int count, double price) {
@@ -15,6 +15,12 @@ public class Store {
         productType = product;
         inventoryCount = count;
         inventoryPrice = price;
+    }
+    //to cover cost inflation
+    public void increasePrice(double priceToAdd){
+        double newPrice = price + priceToAdd;
+        price = newPrice;
+        System.out.println(price);
     }
     public void advertise(){
         System.out.println("Come spend some money!");
@@ -46,6 +52,9 @@ public class Store {
 
         //calling the greetCustomer() method
         lemonadeStand.greetCustomer("Evelyn");
+
+        //calling the increasePrice method
+        lemonadeStand.increasePrice(1.5);
 
 
     }
