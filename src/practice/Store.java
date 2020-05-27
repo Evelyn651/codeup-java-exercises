@@ -20,6 +20,10 @@ public class Store {
         System.out.println("Come spend some money!");
         System.out.println("Selling " + productType + "!");
     }
+    //adding parameters to be used in multiple scopes
+    public void greetCustomer(String customer){
+        System.out.println("Welcome to the store, "+ customer + "!");
+    }
 
     // main method
     public static void main(String[] args) {
@@ -39,6 +43,11 @@ public class Store {
         lemonadeStand.advertise();
         lemonadeStand.advertise();
         lemonadeStand.advertise();
+
+        //calling the greetCustomer() method
+        lemonadeStand.greetCustomer("Evelyn");
+
+
     }
 
 
