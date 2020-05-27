@@ -10,10 +10,15 @@ public class Store {
 
     // constructor method
     public Store(String product, int count, double price) {
+        //why is this printing twice?
         System.out.println("I am inside the constructor method.");
         productType = product;
         inventoryCount = count;
         inventoryPrice = price;
+    }
+    public void advertise(){
+        System.out.println("Come spend some money!");
+        System.out.println("Selling " + productType + "!");
     }
 
     // main method
@@ -30,6 +35,10 @@ public class Store {
         System.out.println("lemonadeStand.productType= " + lemonadeStand.productType +" "+ lemonadeStand.inventoryPrice);
         System.out.println("cookieShop.productType= " + cookieShop.productType +" "+ cookieShop.inventoryPrice);
 
+        //calling the advertise() method
+        lemonadeStand.advertise();
+        lemonadeStand.advertise();
+        lemonadeStand.advertise();
     }
 
 
