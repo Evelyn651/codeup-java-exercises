@@ -2,18 +2,33 @@ package practice;
 
 public class Store {
 
-    // declare instance fields here!
+    // declare instance fields here! //new fields- can have multiple
     String productType;
-    //new fields- can have multiple
     int inventoryCount;
     double inventoryPrice;
+    double price;
 
     // constructor method
     public Store(String product, int count, double price) {
+        //why is this printing twice?
         System.out.println("I am inside the constructor method.");
         productType = product;
         inventoryCount = count;
         inventoryPrice = price;
+    }
+    //to cover cost inflation
+    public void increasePrice(double priceToAdd){
+        double newPrice = price + priceToAdd;
+        price = newPrice;
+        System.out.println(price);
+    }
+    public void advertise(){
+        System.out.println("Come spend some money!");
+        System.out.println("Selling " + productType + "!");
+    }
+    //adding parameters to be used in multiple scopes
+    public void greetCustomer(String customer){
+        System.out.println("Welcome to the store, "+ customer + "!");
     }
 
     // main method
@@ -29,6 +44,18 @@ public class Store {
 
         System.out.println("lemonadeStand.productType= " + lemonadeStand.productType +" "+ lemonadeStand.inventoryPrice);
         System.out.println("cookieShop.productType= " + cookieShop.productType +" "+ cookieShop.inventoryPrice);
+
+        //calling the advertise() method
+        lemonadeStand.advertise();
+        lemonadeStand.advertise();
+        lemonadeStand.advertise();
+
+        //calling the greetCustomer() method
+        lemonadeStand.greetCustomer("Evelyn");
+
+        //calling the increasePrice method
+        lemonadeStand.increasePrice(1.5);
+
 
     }
 
