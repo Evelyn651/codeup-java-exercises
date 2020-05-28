@@ -22,6 +22,12 @@ public class Store {
         price = newPrice;
         System.out.println(price);
     }
+
+    //to get the total Price plus tax
+    public double getPriceWithTax(){
+        double totalPrice = price + (price *0.08);
+        return totalPrice;
+    }
     public void advertise(){
         System.out.println("Come spend some money!");
         System.out.println("Selling " + productType + "!");
