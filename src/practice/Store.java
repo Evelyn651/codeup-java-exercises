@@ -22,6 +22,12 @@ public class Store {
         price = newPrice;
         System.out.println(price);
     }
+
+    //to get the total Price plus tax
+    public double getPriceWithTax(){
+        double totalPrice = price + (price *0.08);
+        return totalPrice;
+    }
     public void advertise(){
         System.out.println("Come spend some money!");
         System.out.println("Selling " + productType + "!");
@@ -38,6 +44,8 @@ public class Store {
         // value
         Store lemonadeStand = new Store("lemonade", 6, 2.20);
         Store cookieShop = new Store("cookies", 12, 3.75);
+        //creating var to hold the value of get price with tax
+        double lemonadePrice = lemonadeStand.getPriceWithTax();
 
         //Ordering matters. we must pass values into the constructor invocation in the same order that they're
         // listed in the parameters
@@ -55,6 +63,9 @@ public class Store {
 
         //calling the increasePrice method
         lemonadeStand.increasePrice(1.5);
+
+        //calling the getPriceWithTax() method //why is it printing out 0.0?
+        System.out.println("lemonadePrice = " + lemonadePrice);
 
 
     }
