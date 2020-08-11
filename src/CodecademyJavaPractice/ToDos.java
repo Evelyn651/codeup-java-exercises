@@ -36,6 +36,12 @@ public class ToDos {
         poirotsToDos.add("call all the suspects together");
         poirotsToDos.add("reveal the truth of the crime");
 
+        //changing elements in the arraylist
+        sherlocksToDos.set(1, "listen to Dr. Watson for amusement");
+        poirotsToDos.set(3, "listen to Captain Hastings for amusement");
+        System.out.println("Sherlock's to-do list: " + sherlocksToDos.toString() + "\n");
+        System.out.println("Poirot's to-do list: " + poirotsToDos.toString() + "\n");
+
         //printing out the size of each array list
         System.out.println("Sherlock has " + sherlocksToDos.size() + " to dos.");
         System.out.println("Poirot has " + poirotsToDos.size() + " to dos.");
