@@ -43,5 +43,9 @@ public class ToDos {
         //the detective with the most to-dos
         System.out.println("Poirot has the most todos.");
 
+        //accessing the elements of the arraylist
+        System.out.println("Sherlock's third to-do is: " + sherlocksToDos.get(2));
+        System.out.println("Poirot's second to-do is: " + poirotsToDos.get(1));
+
     }
 }
