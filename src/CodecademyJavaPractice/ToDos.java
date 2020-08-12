@@ -18,7 +18,7 @@ public class ToDos {
         System.out.println("Your to-do list: " + toDoList);
 
         //Sherlock Holmes' to-do list
-        ArrayList<String> sherlocksToDos = new ArrayList<String>();
+        ArrayList<String> sherlocksToDos = new ArrayList<>();
 
         sherlocksToDos.add("visit the crime scene");
         sherlocksToDos.add("play violin");
