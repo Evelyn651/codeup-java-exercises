@@ -49,6 +49,10 @@ public class ToDos {
         System.out.println("New Sherlock to dos " + sherlocksToDos + "\n");
         System.out.println("New Poirot to dos " + poirotsToDos + "\n");
 
+        //finding out how many things are left to do before "solve the case"
+        System.out.println("There are " + sherlocksToDos.indexOf("solve the case") + " things to do before solving " +
+                        "the case");
+
         //printing out the size of each array list
         System.out.println("Sherlock has " + sherlocksToDos.size() + " to dos.");
         System.out.println("Poirot has " + poirotsToDos.size() + " to dos.");
