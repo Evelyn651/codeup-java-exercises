@@ -26,7 +26,7 @@ public class ToDos {
         sherlocksToDos.add("solve the case");
         sherlocksToDos.add("apprehend the criminal");
 
-        //Piorot's to-do list
+        //Poirot's to-do list
         ArrayList<String> poirotsToDos = new ArrayList<>();
 
         poirotsToDos.add("visit the crime scene");
@@ -41,6 +41,13 @@ public class ToDos {
         poirotsToDos.set(3, "listen to Captain Hastings for amusement");
         System.out.println("Sherlock's to-do list: " + sherlocksToDos.toString() + "\n");
         System.out.println("Poirot's to-do list: " + poirotsToDos.toString() + "\n");
+
+        //deleting - removing elements from arraylists
+        sherlocksToDos.remove("visit the crime scene");
+        sherlocksToDos.remove("play violin");
+        poirotsToDos.remove("visit the crime scene");
+        System.out.println("New Sherlock to dos " + sherlocksToDos + "\n");
+        System.out.println("New Poirot to dos " + poirotsToDos + "\n");
 
         //printing out the size of each array list
         System.out.println("Sherlock has " + sherlocksToDos.size() + " to dos.");
