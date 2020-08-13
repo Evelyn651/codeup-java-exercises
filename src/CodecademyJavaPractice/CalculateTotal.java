@@ -27,5 +27,12 @@ public class CalculateTotal {
             }
         }
         System.out.println(mostExpensive);
+
+//        int commits = 0;
+//
+//        while(commits < 10) {
+//            commits++;
+//            System.out.println("You need to make some commits!");
+//        }
     }
 }
