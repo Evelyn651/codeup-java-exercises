@@ -1,4 +1,4 @@
-package CodecademyJavaPractice;
+package CodecademyJavaPractice.StringMethods;
 
 import jdk.swing.interop.SwingInterOpUtils;
 

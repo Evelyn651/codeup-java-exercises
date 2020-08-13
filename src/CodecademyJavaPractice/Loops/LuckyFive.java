@@ -1,4 +1,4 @@
-package CodecademyJavaPractice;
+package CodecademyJavaPractice.Loops;
 import java.util.Random;
 
 public class LuckyFive {

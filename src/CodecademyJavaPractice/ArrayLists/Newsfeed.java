@@ -1,4 +1,4 @@
-package CodecademyJavaPractice;
+package CodecademyJavaPractice.ArrayLists;
 import java.util.Arrays;
 
 public class Newsfeed {

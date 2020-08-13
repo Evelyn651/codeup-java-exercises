@@ -1,4 +1,4 @@
-package CodecademyJavaPractice;
+package CodecademyJavaPractice.Loops;
 
 public class Coffee {
     public static void main(String[] args){

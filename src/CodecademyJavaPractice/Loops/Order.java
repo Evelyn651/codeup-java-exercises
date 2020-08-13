@@ -1,4 +1,4 @@
-package CodecademyJavaPractice;
+package CodecademyJavaPractice.Loops;
 
 public class Order {
     boolean isFilled;

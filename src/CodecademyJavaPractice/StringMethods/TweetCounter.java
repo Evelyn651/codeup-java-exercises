@@ -1,4 +1,4 @@
-package CodecademyJavaPractice;
+package CodecademyJavaPractice.StringMethods;
 
 public class TweetCounter {
     public static void main(String[] args){

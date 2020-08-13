@@ -1,6 +1,4 @@
-package CodecademyJavaPractice;
-
-import jdk.swing.interop.SwingInterOpUtils;
+package CodecademyJavaPractice.StringMethods;
 
 public class Hashtag {
     public static void main(String[] args){

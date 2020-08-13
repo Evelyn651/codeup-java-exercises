@@ -1,4 +1,4 @@
-package CodecademyJavaPractice;
+package CodecademyJavaPractice.StringMethods;
 
 public class CombineNames {
     public static void main(String[] args){

@@ -1,4 +1,4 @@
-package CodecademyJavaPractice;
+package CodecademyJavaPractice.Loops;
 
 import java.util.ArrayList;
 
