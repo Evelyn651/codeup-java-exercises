@@ -7,7 +7,7 @@ public class MorseCode {
         String code = ".... .. / .. .----. -- / ... --- -. -. -.-- / .- -. -.. / .. / .-.. .. -.- . / - --- / . .- - " +
                 "/ .-. .- -- . -.";
         // look for . .- - morse code for eat
-        System.out.println(code.indexOf(". .- -"));
+        System.out.println(code.indexOf(". .- -")); //prints out 87 because that is where . is
 
         String letters = "ABCDEFGHIMNOPQRSTUVWXYZ";
         System.out.println(letters.indexOf("EFG")); //prints out 4 because thats where e starts
