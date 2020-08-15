@@ -1,4 +1,5 @@
 package CodecademyJavaPractice.InheritancePractice;
 
-public class Spaghetti {
+public class Spaghetti extends Noodle{
+
 }
