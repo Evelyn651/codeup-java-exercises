@@ -1,11 +1,11 @@
 package CodecademyJavaPractice.InheritancePractice;
 
 public class Noodle {
-   private double lengthInCentimeters;
-    private double widthInCentimeters;
-    private String shape;
+   protected double lengthInCentimeters;
+    protected double widthInCentimeters;
+    protected String shape;
     protected String ingredients;
-    private String texture = "brittle";
+    protected String texture = "brittle";
 
     Noodle(double lenInCent, double wthInCent, String shp, String ingr){
         this.lengthInCentimeters = lenInCent;
@@ -35,3 +35,6 @@ public class Noodle {
     }
 
 }
+
+//Polymorphism allows a child class to share the information and behavior of its parent class while also
+// incorporating its own functionality.
