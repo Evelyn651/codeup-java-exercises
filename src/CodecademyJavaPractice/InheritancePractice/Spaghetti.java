@@ -2,7 +2,12 @@ package CodecademyJavaPractice.InheritancePractice;
 
 public class Spaghetti extends Noodle{
 
-    Spaghetti(double lenInCent, double wthInCent, String shp, String ingr) {
-        super(lenInCent, wthInCent, shp, ingr);
+    Spaghetti() {
+        super(30.0, 0.2, "round", "semolina flour");
+    }
+
+    @Override
+    public String getCookPrep(){
+        return "Boil spaghetti for 8 - 12 minutes and add sauce, cheese, or oil and garlic.";
     }
 }
