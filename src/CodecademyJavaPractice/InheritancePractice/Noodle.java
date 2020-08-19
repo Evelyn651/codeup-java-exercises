@@ -22,6 +22,10 @@ public class Noodle {
         return true;
     }
 
+    public String getCookPrep(){
+        return "Boil noodle for 7 minutes and add sauce.";
+    }
+
     public static void main(String[] args){
         Spaghetti spaghettiPomodoro = new Spaghetti();
         System.out.println(spaghettiPomodoro.texture);
