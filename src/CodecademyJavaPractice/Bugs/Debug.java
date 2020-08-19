@@ -14,9 +14,15 @@ public class Debug {
         int width = 20;
         int length = 40;
 
-        int ratio = length / width;
-        System.out.println(ratio);
-        //missing 2 in 20
+        //exception handling
+        try {
+            int ratio = length / width;
+            System.out.println(ratio);
+        }catch(ArithmeticException e){
+            System.err.println("ArithmeticException: " + e.getMessage());
+        }
+        //missing 2 in 20; without the 2 in 20 we get an arithmeticException error message
+
 
 
 
