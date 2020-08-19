@@ -23,6 +23,13 @@ public class Debug {
         }
         //missing 2 in 20; without the 2 in 20 we get an arithmeticException error message
 
+        //logic errors
+        int steps = 10;
+        for(int i = 1; i <= steps; i++){
+            System.out.println("Step #" + i);
+            //starting i at 0 will print out 0 - 10 rather than just 1 - 10.
+        }
+
 
 
 
