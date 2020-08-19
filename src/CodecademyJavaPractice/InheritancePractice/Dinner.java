@@ -7,9 +7,9 @@ public class Dinner {
         System.out.println("Dinner is served!");
     }
 
-    public static void main(String[] args){
-        Dinner noodlesDinner = new Dinner();
-        Noodle biangBiang = new Noodle();
-        noodlesDinner.makeNoodles(biangBiang, "soy sauce and chili oil");
-    }
+//    public static void main(String[] args){
+//        Dinner noodlesDinner = new Dinner();
+////        Noodle biangBiang = new Noodle();
+//        noodlesDinner.makeNoodles(biangBiang, "soy sauce and chili oil");
+//    }
 }
